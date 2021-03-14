@@ -1,6 +1,29 @@
 [
     {
         "date": "May 2021",
-        "event": "Graduated from Arizona State University"
+        "event": "Bachelor's in Computer Science At Arizona State University",
+        "description": "Computer Science Student Graduate focusing on Software engineering and Cybersecurity development"
+    },
+    {
+        "date": "January 2021 to May 2021",
+        "event": "Undergraduate Teachers Assistant",
+        "description": "Focused on creating a helpful learning environment for 500+ students taking CSE365 at Arizona State University",
+        "list" : "  Hosted Office hour sessions for students to come in for 1 on 1 help and assisted in the midterm and final Hackathon Events"
+    },
+    {
+        "date": "September 2020 to May 2021",
+        "event": "Software Engineering Intern",
+        "description": "Developed applications for researcher-use regarding Covid Tracing" ,
+        "list": "Developed Front-end application in React.js and Node.js with our Back-End handled in Node.js, Python, and data stored in ArangoDB"
+    },
+    {
+        "date": "January 2020 to May 2020",
+        "event": "Undergraduate Teachers Assistant",
+        "description": "Focused on creating a helpful learning environment for 300+ students taking CSE365 at Arizona State University",
+        "list" : "  Helped students understand Ciphers including the Vigenere Cipher and assisted in the midterm and final Hackathon Events"
+    },
+    {
+        "date":"May 2019",
+        "event": "Graduated from Mesa Community College"
     }
 ]

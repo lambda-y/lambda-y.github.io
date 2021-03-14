@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePg';
 import AboutPage from './pages/aboutPg';
 import ContactPage from './pages/contactPg';
-import timelinePage from './pages/timelinePg';
+import TimelinePage from './pages/timelinePg';
 
 
 
@@ -36,14 +36,13 @@ class App extends React.Component {
       },
       about: {
         
-        subTitle: 'This is me',
-        text: "I grew up in Burlington Washington where I learned a"
+        title: 'This is me',
       },
       contact: {
         title: "Contact Information"
       },
       timeline: {
-        subTitle: "Event Log"
+        title: "Event Log"
       }
 
     }
@@ -91,7 +90,7 @@ class App extends React.Component {
                           text={this.state.contact.text}
                          />}   />
           <Route path="/timeline" exact render={() => 
-              <timelinePage title={this.state.timeline.title} 
+              <TimelinePage title={this.state.timeline.title} 
                           subTitle={this.state.timeline.subTitle}
                           text={this.state.timeline.text}
                          />}   />

@@ -5,23 +5,31 @@ import 'react-vertical-timeline-component/style.min.css';
 import events from "./events.json";
 
 
-function timelinePage(props) {
+function TimelinePage(props) {
 
     return (
-        <div>
+        <div style={{ background: "#ccc"}}>
             <Hero title={props.title} subTitle={props.subTitle} text={props.text}/>
-            test
             <VerticalTimeline>
                 {events.map(event => (
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date={event.date}
-                    iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                    iconStyle={{ background: "rgb(33, 150, 0)", color: "#111" }}
                     >
                 <h3
                 className="vertical-timeline-element-title"
                 dangerouslySetInnerHTML={{ __html: event.event }}
                 />
+                <h6
+                    className="vertical-timeline-element-text"
+                    dangerouslySetInnerHTML={{__html: event.description}}
+                />
+                <h6
+                    className="vertical-timeline-element-text"
+                    dangerouslySetInnerHTML={{__html: event.list}}
+                />
+                
                 </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
@@ -30,4 +38,4 @@ function timelinePage(props) {
     );
 }
 
-export default timelinePage;
+export default TimelinePage;

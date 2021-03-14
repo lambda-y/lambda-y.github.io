@@ -16,6 +16,11 @@ function Hero(props) {
                         { props.title && <h3 className="display-4 font-weight-bold">{props.title}</h3>}
                         { props.subTitle && <h4>{props.subTitle}</h4>}
                         { props.text && <p>{props.text}</p> }
+                        { props.subTitle2 && <h4>{props.subtitle2}</h4>}
+                        { props.text2 && <p>{props.text2}</p>}
+                        { props.subTitle3 && <h4>{props.subTitle3}</h4>}
+                        { props.text3 && <p>{props.text3}</p>}
+                        { props.email && <a id={props.email} href='#'>ryleylamb@gmail.com</a>   }
                     </Col>
                 </Row>
             </Container>
