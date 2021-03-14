@@ -2,12 +2,20 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePg';
+import AboutPage from './pages/aboutPg';
+import ContactPage from './pages/contactPg';
+import timelinePage from './pages/timelinePg';
+
+
+
+//Portfolio Photo      \/
 import logo from './portfolioPhoto.jpg';
 import './App.css';
-import NavbarBrand from 'react-bootstrap/NavbarBrand'
-import NavbarToggle from 'react-bootstrap/NavbarToggle'
-import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
-import Nav from 'react-bootstrap/Nav'
+
+
 
 class App extends React.Component {
 
@@ -18,18 +26,24 @@ class App extends React.Component {
       headerLinks: [
         {title: 'Home', path: '/'}, 
         {title: 'About', path: '/about'} , 
-        {title: 'Contact', path: '/contact' }
+        {title: 'Contact', path: '/contact' },
+        {title: 'Timeline', path: '/timeline'}
       ],
       home: {
-        title: 'Grand Admiral',
-        subTitle: 'Thrawn',
-        text: 'Welcome'
+        title: 'Welcome to my Page',
+        subTitle: '',
+        text: 'Check out my Github and contact page'
       },
       about: {
-        title: 'About me'
+        
+        subTitle: 'This is me',
+        text: "I grew up in Burlington Washington where I learned a"
       },
       contact: {
         title: "Contact Information"
+      },
+      timeline: {
+        subTitle: "Event Log"
       }
 
     }
@@ -45,19 +59,45 @@ class App extends React.Component {
 
 
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <NavbarBrand>Ryley Lamb</NavbarBrand>
+            <Navbar.Brand>Ryley Lamb</Navbar.Brand>
               
-            <NavbarToggle className="border-0" aria-controls="navbar-toggle"/>
-            <NavbarCollapse id="navbar-toggle">
+            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
+            <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/"> Home </Link>
                 <Link className="nav-link" to="/about"> About </Link>
                 <Link className="nav-link" to="/contact"> Contact </Link>
+                <Link className="nav-link" to="/timeline"> Timeline </Link>
+
+                
               </Nav>
-            </NavbarCollapse>
+            </Navbar.Collapse>
           </Navbar>
 
+          <Route path="/" exact render={() => 
+              <HomePage title={this.state.home.title} 
+                        subTitle={this.state.home.subTitle}
+                        text={this.state.home.text} />}   />
 
+          <Route path="/about" exact render={() => 
+              <AboutPage title={this.state.about.title} 
+                          subTitle={this.state.about.subTitle}
+                          text={this.state.about.text}
+                         />}   />
+
+          <Route path="/contact" exact render={() => 
+              <ContactPage title={this.state.contact.title} 
+                          subTitle={this.state.contact.subTitle}
+                          text={this.state.contact.text}
+                         />}   />
+          <Route path="/timeline" exact render={() => 
+              <timelinePage title={this.state.timeline.title} 
+                          subTitle={this.state.timeline.subTitle}
+                          text={this.state.timeline.text}
+                         />}   />
+          <Footer />
+
+          
         </Container>
       </Router>
 
