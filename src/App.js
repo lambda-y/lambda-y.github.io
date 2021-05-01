@@ -8,11 +8,12 @@ import HomePage from './pages/HomePg';
 import AboutPage from './pages/aboutPg';
 import ContactPage from './pages/contactPg';
 import TimelinePage from './pages/timelinePg';
+import { SocialIcon } from 'react-social-icons';
 
 
 
 //Portfolio Photo      \/
-import logo from './portfolioPhoto.jpg';
+//import logo from './portfolioPhoto.jpg';
 import './App.css';
 
 
@@ -39,7 +40,7 @@ class App extends React.Component {
         title: 'This is me',
       },
       contact: {
-        title: "Contact Information"
+        title: "Contact Me!"
       },
       timeline: {
         title: "Event Log"

@@ -5,14 +5,20 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
+
 function Hero(props) {
+    
     
 
     return(
         <Jumbotron className='p-3 mb-2 bg-secondary text-white jumbotron-fluid'>
+            
+
+
             <Container>
                 <Row className='justify-content-center py-2'>
                     <Col>
+                    
                         { props.title && <h3 className="display-4 font-weight-bold">{props.title}</h3>}
                         { props.subTitle && <h4>{props.subTitle}</h4>}
                         { props.text && <p>{props.text}</p> }
@@ -20,7 +26,7 @@ function Hero(props) {
                         { props.text2 && <p>{props.text2}</p>}
                         { props.subTitle3 && <h4>{props.subTitle3}</h4>}
                         { props.text3 && <p>{props.text3}</p>}
-                        { props.email && <a id={props.email} href='#'>ryleylamb@gmail.com</a>   }
+                        { props.email && <a id={props.email} href={props.email}>{props.email}</a>   }
                     </Col>
                 </Row>
             </Container>

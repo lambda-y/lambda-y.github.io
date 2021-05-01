@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import events from "./events.json";
+import { SocialIcon } from 'react-social-icons';
 
 
 function TimelinePage(props) {
@@ -25,13 +26,20 @@ function TimelinePage(props) {
                     className="vertical-timeline-element-text"
                     dangerouslySetInnerHTML={{__html: event.description}}
                 />
+                
                 <h6
                     className="vertical-timeline-element-text"
                     dangerouslySetInnerHTML={{__html: event.list}}
                 />
+                <SocialIcon url={event.link}/>
+                <br/>
+                
+
                 
                 </VerticalTimelineElement>
                 ))}
+
+                
             </VerticalTimeline>
       
         </div>

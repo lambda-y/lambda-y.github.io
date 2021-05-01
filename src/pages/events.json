@@ -2,28 +2,51 @@
     {
         "date": "May 2021",
         "event": "Bachelor's in Computer Science At Arizona State University",
-        "description": "Computer Science Student Graduate focusing on Software engineering and Cybersecurity development"
+        "description": "Computer Science Student Graduate focusing on Software engineering and Cybersecurity development",
+        "link": "https://www.asu.edu/"
     },
     {
         "date": "January 2021 to May 2021",
         "event": "Undergraduate Teachers Assistant",
         "description": "Focused on creating a helpful learning environment for 500+ students taking CSE365 at Arizona State University",
-        "list" : "  Hosted Office hour sessions for students to come in for 1 on 1 help and assisted in the midterm and final Hackathon Events"
+        "list" : "  Hosted Office hour sessions for students to come in for 1 on 1 help and assisted in the midterm and final Hackathon Events",
+        "link" : "https://cse365.io/"
     },
+    {
+        "date": "December 2020 to Present",
+        "event": "'Stonkers' Discord bot",
+        "description": "Python Discord bot that is able to keep track of community market strategies",
+        "list" : "Bot utilizes MongoDB, dedicated machine, and yfinance for market ",
+        "link" : "https://github.com/lambda-y/stonkers"
+   
+    },
+    
     {
         "date": "September 2020 to May 2021",
         "event": "Software Engineering Intern",
         "description": "Developed applications for researcher-use regarding Covid Tracing" ,
-        "list": "Developed Front-end application in React.js and Node.js with our Back-End handled in Node.js, Python, and data stored in ArangoDB"
+        "list": "Developed Front-end application in React.js and Node.js with our Back-End handled in Node.js, Python, and data stored in ArangoDB",
+        "link" : "https://www.shoptaki.com/"
+    },
+    {
+        "date": "Summer 2020",
+        "event": "TopIntern (React App)",
+        "description": "Collaborated with 2 colleagues to develop a web application in React.js with the intentions of making company reviews more open source" ,
+        "list": "Hosted the application on GCP with FirestoreDB to get a grasp into these new emerging technologies",
+        "link": "https://opintern-2f402.web.app/"
     },
     {
         "date": "January 2020 to May 2020",
         "event": "Undergraduate Teachers Assistant",
         "description": "Focused on creating a helpful learning environment for 300+ students taking CSE365 at Arizona State University",
-        "list" : "  Helped students understand Ciphers including the Vigenere Cipher and assisted in the midterm and final Hackathon Events"
+        "list" : "Helped students understand Ciphers including the Vigenere Cipher and assisted in the midterm and final Hackathon Events",
+        "link" : "https://adamdoupe.com/teaching/classes/cse365-intro-information-assurance-s20/"
     },
     {
         "date":"May 2019",
-        "event": "Graduated from Mesa Community College"
+        "event": "Graduated from Mesa Community College",
+        "description": "Associate's in Computer Science",
+        "link" : "https://www.mesacc.edu/"
+        
     }
 ]
